@@ -103,7 +103,7 @@ if args.cuda:
     torch.cuda.manual_seed(args.seed)
 
 # data loader and model
-assert args.type in ['cifar10', 'cifar100'], args.type
+assert args.type in ['cifar10', 'cifar100', 'mnist'], args.type
 train_loader, test_loader = dataset.get10(batch_size=args.batch_size, num_workers=1)
 model = model.cifar10(args = args, logger=logger)
 if args.cuda:

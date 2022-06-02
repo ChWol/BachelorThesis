@@ -79,7 +79,7 @@ if args.cuda:
 model_path = './log/default/batch_size=200/decreasing_lr=200,250/grad_scale=8/seed=117/type=cifar10/wl_activate=8/wl_error=8/wl_grad=8/wl_weight=8/latest.pth'
 
 # data loader and model
-assert args.type in ['cifar10', 'cifar100'], args.type
+assert args.type in ['cifar10', 'cifar100', 'mnist'], args.type
 train_loader, test_loader = dataset.get10(batch_size=args.batch_size, num_workers=1)
 modelCF = model.cifar10(args = args, logger=logger, pretrained = model_path)
 print(args.cuda)

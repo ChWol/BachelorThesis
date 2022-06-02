@@ -36,6 +36,30 @@ def get10(batch_size, data_root='/tmp/public_dataset/pytorch', train=True, val=T
     ds = ds[0] if len(ds) == 1 else ds
     return ds
 
+def get_mnist(batch_size, data_root='/tmp/public_dataset/pytorch', train=True, val=True, **kwargs):
+    data_root = os.path.expanduser(os.path.join(data_root, 'mnist'))
+    num_workers = kwargs.setdefault('num_workers', 1)
+    kwargs.pop('input_size', None)
+    print("Building MNIST data loader with {} workers".format(num_workers))
+    ds = []
+    if train:
+        train_loader = torch.utils.data.DataLoader(
+            datasets.MNIST(
+                root=data_root, train=True, download=True,
+                transform=transforms.ToTensor()),
+            batch_size=batch_size, shuffle=True, **kwargs)
+
+        ds.append(train_loader)
+    if val:
+        test_loader = torch.utils.data.DataLoader(
+            datasets.MNIST(
+                root=data_root, train=False, download=True,
+                transform=transforms.ToTensor()),
+            batch_size=batch_size, shuffle=False, **kwargs)
+        ds.append(test_loader)
+    ds = ds[0] if len(ds) == 1 else ds
+    return ds
+
 def get100(batch_size, data_root='/tmp/public_dataset/pytorch', train=True, val=True, **kwargs):
     data_root = os.path.expanduser(os.path.join(data_root, 'cifar100-data'))
     num_workers = kwargs.setdefault('num_workers', 1)
