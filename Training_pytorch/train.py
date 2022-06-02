@@ -255,7 +255,7 @@ try:
             logger('\tEpoch {} Test set: Average loss: {:.4f}, Accuracy: {}/{} ({:.0f}%)'.format(
                 epoch, test_loss, correct, len(test_loader.dataset), acc))
             accuracy = acc.cpu().data.numpy()
-            np.savetxt(tensor.cpu(out), tensor.cpu([[epoch, test_loss, accuracy]]), delimiter=",",fmt='%f')
+            np.savetxt(out.cpu().data.numpy(), [[epoch, test_loss, accuracy]], delimiter=",",fmt='%f')
             
             if acc > best_acc:
                 new_file = os.path.join(args.logdir, 'best-{}.pth'.format(epoch))
