@@ -57,7 +57,7 @@ Param::Param() {
 	operationmode = 2;     		// 1: conventionalSequential (Use several multi-bit RRAM as one synapse)
 								// 2: conventionalParallel (Use several multi-bit RRAM as one synapse)
 	
-	memcelltype = 2;        	// 1: cell.memCellType = Type::SRAM
+	memcelltype = 3;        	// 1: cell.memCellType = Type::SRAM
 								// 2: cell.memCellType = Type::RRAM
 								// 3: cell.memCellType = Type::FeFET
 	
@@ -87,7 +87,7 @@ Param::Param() {
 	chipActivation = true;      // false: activation (reLu/sigmoid) inside Tile
 								// true: activation outside Tile
 								
-	reLu = true;                // false: sigmoid
+	reLu = false;                // false: sigmoid
 								// true: reLu
 								
 	novelMapping = true;        // false: conventional mapping
@@ -108,7 +108,7 @@ Param::Param() {
 	clkFreq = 1e9;                      // Clock frequency
 	featuresize = 40e-9;                // Wire width for subArray simulation
 	temp = 301;                         // Temperature (K)
-	technode = 32;                      // Technology
+	technode = 90;                      // Technology
 	wireWidth = 40;                     // wireWidth of the cell for Accuracy calculation
 	globalBusDelayTolerance = 0.1;      // to relax bus delay for global H-Tree (chip level: communication among tiles), if tolerance is 0.1, the latency will be relax to (1+0.1)*optimalLatency (trade-off with energy)
 	localBusDelayTolerance = 0.1;       // to relax bus delay for global H-Tree (tile level: communication among PEs), if tolerance is 0.1, the latency will be relax to (1+0.1)*optimalLatency (trade-off with energy)
@@ -124,7 +124,7 @@ Param::Param() {
 	
 	numColMuxed = 8;                    // How many columns share 1 ADC (for eNVM and FeFET) or parallel SRAM
 	levelOutput = 64;                   // # of levels of the multilevelSenseAmp output, should be in 2^N forms; e.g. 32 levels --> 5-bit ADC
-	cellBit = 5;                        // precision of memory device 
+	cellBit = 2;                        // precision of memory device 
 	
 	/*** parameters for SRAM ***/
 	heightInFeatureSizeSRAM = 8;        // SRAM Cell height in feature size

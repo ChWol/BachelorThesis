@@ -10,12 +10,14 @@ from torch.autograd import Variable
 from utee import make_path
 from cifar import dataset
 from cifar import model
+from mnist import dataset
+from mnist import model
 from utee import hook
 #from IPython import embed
 from datetime import datetime
 from subprocess import call
 parser = argparse.ArgumentParser(description='PyTorch CIFAR-X Example')
-parser.add_argument('--type', default='cifar10', help='cifar10|cifar100')
+parser.add_argument('--type', default='cifar10', help='cifar10|cifar100|mnist')
 parser.add_argument('--batch_size', type=int, default=200, help='input batch size for training (default: 64)')
 parser.add_argument('--epochs', type=int, default=1, help='number of epochs to train (default: 10)')
 parser.add_argument('--grad_scale', type=float, default=8, help='learning rate for wage delta calculation')
@@ -76,12 +78,19 @@ torch.manual_seed(args.seed)
 if args.cuda:
 	torch.cuda.manual_seed(args.seed)
 
-model_path = './log/default/batch_size=200/decreasing_lr=200,250/grad_scale=8/seed=117/type=cifar10/wl_activate=8/wl_error=8/wl_grad=8/wl_weight=8/latest.pth'
+model_path = './log/default/batch_size=200/decreasing_lr=200,250/grad_scale=8/seed=117/type='+args.type+'/wl_activate=8/wl_error=8/wl_grad=8/wl_weight=8/latest.pth'
 
 # data loader and model
 assert args.type in ['cifar10', 'cifar100', 'mnist'], args.type
-train_loader, test_loader = dataset.get10(batch_size=args.batch_size, num_workers=1)
-modelCF = model.cifar10(args = args, logger=logger, pretrained = model_path)
+if args.type == 'cifar10':
+	train_loader, test_loader = dataset.get10(batch_size=args.batch_size, num_workers=1)
+	modelCF = model.cifar10(args = args, logger=logger, pretrained = model_path)
+if args.type == 'cifar100':
+	train_loader, test_loader = dataset.get100(batch_size=args.batch_size, num_workers=1)
+	modelCF = model.cifar100(args = args, logger=logger, pretrained = model_path)
+if args.type == 'mnist':
+	train_loader, test_loader = dataset.get_mnist(batch_size=args.batch_size, num_workers=1)
+	modelCF = model.mnist(args = args, logger=logger, pretrained = model_path)
 print(args.cuda)
 if args.cuda:
 	modelCF.cuda()

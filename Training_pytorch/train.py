@@ -8,6 +8,8 @@ from torch.autograd import Variable
 from utee import make_path
 from cifar import dataset
 from cifar import model
+from mnist import dataset
+from mnist import model
 from utee import wage_util
 from datetime import datetime
 from utee import wage_quantizer
@@ -105,7 +107,12 @@ if args.cuda:
 # data loader and model
 assert args.type in ['cifar10', 'cifar100', 'mnist'], args.type
 train_loader, test_loader = dataset.get10(batch_size=args.batch_size, num_workers=1)
-model = model.cifar10(args = args, logger=logger)
+if args.type == 'cifar10':
+    model = model.cifar10(args = args, logger=logger)
+if args.type == 'cifar100':
+    model = model.cifar100(args = args, logger=logger)
+if args.type == 'mnist':
+    model = model.mnist(args = args, logger=logger)
 if args.cuda:
     model.cuda()
 
