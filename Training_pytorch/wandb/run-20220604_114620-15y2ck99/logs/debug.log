@@ -1,0 +1,24 @@
+2022-06-04 11:46:20,477 INFO    MainThread:171931 [wandb_setup.py:_flush():76] Loading settings from /home/chwolters/.config/wandb/settings
+2022-06-04 11:46:20,477 INFO    MainThread:171931 [wandb_setup.py:_flush():76] Loading settings from /home/chwolters/BachelorThesis/Training_pytorch/wandb/settings
+2022-06-04 11:46:20,478 INFO    MainThread:171931 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2022-06-04 11:46:20,478 INFO    MainThread:171931 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'Training_pytorch/train.py', 'program': '/home/chwolters/BachelorThesis/Training_pytorch/train.py'}
+2022-06-04 11:46:20,478 INFO    MainThread:171931 [wandb_init.py:_log_setup():428] Logging user logs to /home/chwolters/BachelorThesis/Training_pytorch/wandb/run-20220604_114620-15y2ck99/logs/debug.log
+2022-06-04 11:46:20,478 INFO    MainThread:171931 [wandb_init.py:_log_setup():429] Logging internal logs to /home/chwolters/BachelorThesis/Training_pytorch/wandb/run-20220604_114620-15y2ck99/logs/debug-internal.log
+2022-06-04 11:46:20,479 INFO    MainThread:171931 [wandb_init.py:init():462] calling init triggers
+2022-06-04 11:46:20,479 INFO    MainThread:171931 [wandb_init.py:init():465] wandb.init called with sweep_config: {}
+config: {}
+2022-06-04 11:46:20,479 INFO    MainThread:171931 [wandb_init.py:init():515] starting backend
+2022-06-04 11:46:20,479 INFO    MainThread:171931 [backend.py:_multiprocessing_setup():97] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2022-06-04 11:46:20,493 INFO    MainThread:171931 [backend.py:ensure_launched():217] starting backend process...
+2022-06-04 11:46:20,499 INFO    MainThread:171931 [backend.py:ensure_launched():222] started backend process with pid: 171941
+2022-06-04 11:46:20,502 INFO    MainThread:171931 [wandb_init.py:init():525] backend started and connected
+2022-06-04 11:46:20,506 INFO    MainThread:171931 [wandb_init.py:init():596] updated telemetry
+2022-06-04 11:46:20,526 INFO    MainThread:171931 [wandb_init.py:init():627] communicating run to backend with 30 second timeout
+2022-06-04 11:46:21,970 INFO    MainThread:171931 [wandb_run.py:_on_init():1924] communicating current version
+2022-06-04 11:46:22,076 INFO    MainThread:171931 [wandb_run.py:_on_init():1928] got version response 
+2022-06-04 11:46:22,077 INFO    MainThread:171931 [wandb_init.py:init():662] starting run threads in backend
+2022-06-04 11:46:27,098 INFO    MainThread:171931 [wandb_run.py:_console_start():1898] atexit reg
+2022-06-04 11:46:27,099 INFO    MainThread:171931 [wandb_run.py:_redirect():1771] redirect: SettingsConsole.REDIRECT
+2022-06-04 11:46:27,099 INFO    MainThread:171931 [wandb_run.py:_redirect():1776] Redirecting console.
+2022-06-04 11:46:27,102 INFO    MainThread:171931 [wandb_run.py:_redirect():1832] Redirects installed.
+2022-06-04 11:46:27,102 INFO    MainThread:171931 [wandb_init.py:init():688] run started, returning control to user process

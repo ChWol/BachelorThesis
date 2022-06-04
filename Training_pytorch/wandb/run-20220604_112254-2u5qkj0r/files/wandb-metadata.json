@@ -1,0 +1,27 @@
+{
+    "os": "Linux-5.4.0-110-generic-x86_64-with-glibc2.31",
+    "python": "3.9.12",
+    "heartbeatAt": "2022-06-04T15:22:56.063768",
+    "startedAt": "2022-06-04T15:22:54.361073",
+    "docker": null,
+    "gpu": "NVIDIA GeForce GTX TITAN X",
+    "gpu_count": 3,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [
+        "--epochs",
+        "1"
+    ],
+    "state": "running",
+    "program": "/home/chwolters/BachelorThesis/Training_pytorch/train.py",
+    "codePath": "Training_pytorch/train.py",
+    "git": {
+        "remote": "https://github.com/ChWol/BachelorThesis.git",
+        "commit": "17fc7d7fb9be37d5a40285654d8c3afd73de6976"
+    },
+    "email": "ch.wolters@tum.de",
+    "root": "/home/chwolters/BachelorThesis",
+    "host": "yh-ws9",
+    "username": "chwolters",
+    "executable": "/home/chwolters/anaconda3/bin/python"
+}

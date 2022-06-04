@@ -18,6 +18,9 @@ import numpy as np
 import csv
 from subprocess import call
 from modules.quantization_cpu_np_infer import QConv2d,QLinear
+import wandb
+
+wandb.init(project='test')
 
 parser = argparse.ArgumentParser(description='PyTorch CIFAR-X Example')
 parser.add_argument('--type', default='cifar10', help='dataset for training')
@@ -181,6 +184,7 @@ try:
                 pred = output.data.max(1)[1]  # get the index of the max log-probability
                 correct = pred.cpu().eq(indx_target).sum()
                 acc = float(correct) * 1.0 / len(data)
+                wandb.log({'accuracy': acc, 'loss': loss})
                 logger('Train Epoch: {} [{}/{}] Loss: {:.6f} Acc: {:.4f} lr: {:.2e}'.format(
                     epoch, batch_idx * len(data), len(train_loader.dataset),
                     loss.data, acc, optimizer.param_groups[0]['lr']))
@@ -236,7 +240,7 @@ try:
                 hook.write_matrix_weight( (oldWeight[h]).cpu().data.numpy(),weight_file_name)
                 h = h+1
         
-        if epoch % args.test_interval == 0:
+        if epoch % args.test_interval == args.test_interval-1:
             model.eval()
             test_loss = 0
             correct = 0
@@ -262,11 +266,6 @@ try:
             logger('\tEpoch {} Test set: Average loss: {:.4f}, Accuracy: {}/{} ({:.0f}%)'.format(
                 epoch, test_loss, correct, len(test_loader.dataset), acc))
             accuracy = acc.cpu().data.numpy()
-            print("Hier gehts los mit den Types")
-            print(type(out))
-            print(type(epoch))
-            print(type(test_loss))
-            print(type(accuracy))
             np.savetxt(out, [[epoch, test_loss.cpu(), accuracy]], delimiter=",",fmt='%f')
             
             if acc > best_acc:
