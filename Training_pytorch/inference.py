@@ -46,7 +46,7 @@ args = parser.parse_args()
 args.wl_weight = 8
 args.wl_grad = 8
 args.wl_error = 8
-args.batch_size = 1024
+args.batch_size = 256
 args.inference = 1            # set to run inference simulation
 # Hardware Properties
 args.subArray = 128           # size of subArray (e.g. 128*128)

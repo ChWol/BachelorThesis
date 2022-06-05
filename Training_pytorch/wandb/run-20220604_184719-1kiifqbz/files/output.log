@@ -1,0 +1,185 @@
+=================FLAGS==================
+type: cifar10
+batch_size: 200
+epochs: 5
+grad_scale: 1
+seed: 117
+log_interval: 100
+test_interval: 5
+logdir: /home/chwolters/BachelorThesis/Training_pytorch/log/default/ADCprecision=5/batch_size=200/c2cVari=0.003/cellBit=5/d2dVari=0.0/decreasing_lr=200,250/detect=0/grad_scale=1/inference=0/max_level=32/nonlinearityLTD=1.46/nonlinearityLTP=1.75/onoffratio=10/seed=117/subArray=128/t=0/target=0/type=cifar10/v=0/vari=0/wl_activate=8/wl_error=8/wl_grad=5/wl_weight=5
+decreasing_lr: 200,250
+wl_weight: 5
+wl_grad: 5
+wl_activate: 8
+wl_error: 8
+inference: 0
+onoffratio: 10
+cellBit: 5
+subArray: 128
+ADCprecision: 5
+vari: 0
+t: 0
+v: 0
+detect: 0
+target: 0
+nonlinearityLTP: 1.75
+nonlinearityLTD: 1.46
+max_level: 32
+d2dVari: 0.0
+c2cVari: 0.003
+========================================
+/home/chwolters/BachelorThesis/Training_pytorch/log/default/ADCprecision=5/batch_size=200/c2cVari=0.003/cellBit=5/d2dVari=0.0/decreasing_lr=200,250/detect=0/grad_scale=1/inference=0/max_level=32/nonlinearityLTD=1.46/nonlinearityLTP=1.75/onoffratio=10/seed=117/subArray=128/t=0/target=0/type=cifar10/v=0/vari=0/wl_activate=8/wl_error=8/wl_grad=5/wl_weight=5
+Building CIFAR-10 data loader with 1 workers
+Files already downloaded and verified
+Files already downloaded and verified
+fan_in     27, float_limit 0.333333, quant limit 1.5, scale 4
+fan_in   1152, float_limit 0.051031, quant limit 1.5, scale 32
+fan_in   1152, float_limit 0.051031, quant limit 1.5, scale 32
+fan_in   2304, float_limit 0.036084, quant limit 1.5, scale 32
+fan_in   2304, float_limit 0.036084, quant limit 1.5, scale 32
+fan_in   4608, float_limit 0.025516, quant limit 1.5, scale 64
+fan_in   8192, float_limit 0.019137, quant limit 1.5, scale 64
+fan_in   1024, float_limit 0.054127, quant limit 1.5, scale 32
+Sequential(
+  (0): QConv2d(3, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (1): ReLU()
+  (2): QConv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (3): ReLU()
+  (4): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (5): QConv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (6): ReLU()
+  (7): QConv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (8): ReLU()
+  (9): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (10): QConv2d(256, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (11): ReLU()
+  (12): QConv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (13): ReLU()
+  (14): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+)
+Sequential(
+  (0): QLinear(in_features=8192, out_features=1024, bias=False)
+  (1): ReLU(inplace=True)
+  (2): QLinear(in_features=1024, out_features=10, bias=False)
+)
+decreasing_lr: [200, 250]
+training phase
+Train Epoch: 0 [20000/50000] Loss: 83.652206 Acc: 0.2750 lr: 1.00e+00
+Train Epoch: 0 [40000/50000] Loss: 74.626762 Acc: 0.4200 lr: 1.00e+00
+Elapsed 106.71s, 106.71 s/epoch, 0.43 s/batch, ets 426.82s
+weight distribution
+[-4.71894396e-03 -3.68156005e-03  5.64123271e-03 -3.65321338e-03
+ -8.04464726e-05 -1.32363476e-02 -3.35567445e-02 -3.59818875e-03
+  4.93629158e-01  6.24858081e-01  6.38363004e-01  6.56319678e-01
+  6.65003657e-01  6.55160606e-01  7.00596809e-01  6.37180090e-01]
+delta distribution
+[-5.29875560e-03  2.08960637e-03  1.17874146e-03  8.66042275e-04
+  4.10874694e-04  4.92890656e-04  8.07046890e-05 -4.88281257e-05
+  3.00024003e-02  1.98736228e-02  1.84721202e-02  1.24577628e-02
+  1.08058155e-02  1.09312814e-02  6.16319198e-03  1.09099858e-02]
+training phase
+Train Epoch: 1 [20000/50000] Loss: 69.825851 Acc: 0.4850 lr: 1.00e+00
+Train Epoch: 1 [40000/50000] Loss: 69.831604 Acc: 0.4600 lr: 1.00e+00
+Elapsed 208.82s, 104.41 s/epoch, 0.42 s/batch, ets 313.23s
+weight distribution
+[-0.00804417 -0.01001254  0.00940686 -0.00970166 -0.00088454 -0.02341184
+ -0.03853624 -0.00347794  0.45017144  0.58527601  0.58480453  0.61462915
+  0.62471086  0.62553185  0.69283247  0.63514471]
+delta distribution
+[-6.79976866e-03  3.45399650e-03  2.33650208e-03  2.74891336e-03
+  3.99165699e-04  3.19798797e-04  1.83880329e-05 -1.22070312e-04
+  2.88288295e-02  2.15574782e-02  2.05558576e-02  1.95195656e-02
+  1.34190908e-02  1.46920178e-02  6.17591990e-03  8.60217772e-03]
+training phase
+Train Epoch: 2 [20000/50000] Loss: 64.669083 Acc: 0.5100 lr: 1.00e+00
+Train Epoch: 2 [40000/50000] Loss: 56.873940 Acc: 0.5550 lr: 1.00e+00
+weight distribution
+[-0.01926078 -0.02029577  0.00383346 -0.01976375 -0.00083698 -0.02703691
+ -0.04123838 -0.00253593  0.4337694   0.55728167  0.55642468  0.59089637
+  0.59450495  0.60468787  0.68724138  0.63507253]
+delta distribution
+[-4.14134841e-03  9.73171671e-04  5.59488952e-04  5.16573607e-04
+  4.36570917e-05  1.03924009e-04  3.93912196e-05 -7.32421904e-05
+  2.97691096e-02  1.84920039e-02  1.70084406e-02  1.68232359e-02
+  1.67541970e-02  1.38078332e-02  6.38728170e-03  8.99300352e-03]
+Elapsed 310.30s, 103.43 s/epoch, 0.41 s/batch, ets 206.87s
+training phase
+Train Epoch: 3 [20000/50000] Loss: 67.771210 Acc: 0.4800 lr: 1.00e+00
+Train Epoch: 3 [40000/50000] Loss: 51.315376 Acc: 0.6400 lr: 1.00e+00
+Elapsed 412.33s, 103.08 s/epoch, 0.41 s/batch, ets 103.08s
+weight distribution
+[-0.01702468 -0.02419991 -0.003555   -0.03208438 -0.00359235 -0.03230149
+ -0.0424977  -0.00099483  0.44894889  0.54402727  0.54214323  0.58488542
+  0.57440209  0.58893859  0.68376714  0.63191003]
+delta distribution
+[-1.98929396e-04  3.65447998e-03  9.73807473e-04  1.12067326e-03
+  6.59041922e-04  4.06371226e-04  9.74461436e-05 -4.27246086e-05
+  3.62297669e-02  2.58405041e-02  2.02711914e-02  2.04509720e-02
+  1.52350515e-02  1.24087008e-02  6.52115094e-03  8.66920128e-03]
+training phase
+Train Epoch: 4 [20000/50000] Loss: 51.426510 Acc: 0.6350 lr: 1.00e+00
+Train Epoch: 4 [40000/50000] Loss: 55.795418 Acc: 0.6000 lr: 1.00e+00
+Elapsed 513.92s, 102.78 s/epoch, 0.41 s/batch, ets 0.00s
+weight distribution
+[-2.16385275e-02 -2.54653729e-02 -4.02976945e-03 -4.35563922e-02
+ -4.57436359e-03 -3.48147862e-02 -4.61045876e-02 -3.93416733e-04
+  4.62463707e-01  5.36799669e-01  5.32672822e-01  5.78250706e-01
+  5.59717357e-01  5.76204717e-01  6.81989968e-01  6.28714740e-01]
+delta distribution
+[-2.69458909e-03  2.22651171e-03  6.61214173e-04  1.14048854e-03
+  2.61094829e-04  1.64243920e-05  6.19813800e-05 -3.05175781e-04
+  3.09377704e-02  1.88787747e-02  1.92804430e-02  2.06511337e-02
+  1.96321644e-02  1.09570427e-02  6.48722053e-03  1.23494798e-02]
+testing phase
+	Epoch 4 Test set: Average loss: 46.0705, Accuracy: 6816/10000 (68%)
+Saving model to /home/chwolters/BachelorThesis/Training_pytorch/log/default/ADCprecision=5/batch_size=200/c2cVari=0.003/cellBit=5/d2dVari=0.0/decreasing_lr=200,250/detect=0/grad_scale=1/inference=0/max_level=32/nonlinearityLTD=1.46/nonlinearityLTP=1.75/onoffratio=10/seed=117/subArray=128/t=0/target=0/type=cifar10/v=0/vari=0/wl_activate=8/wl_error=8/wl_grad=5/wl_weight=5/best-4.pth
+------------------------------ FloorPlan --------------------------------
+Tile and PE size are optimized to maximize memory utilization ( = memory mapped by synapse / total memory on chip)
+Desired Conventional Mapped Tile Storage Size: 1024x1024
+Desired Conventional PE Storage Size: 512x512
+Desired Novel Mapped Tile Storage Size: 9x512x512
+User-defined SubArray Size: 128x128
+----------------- # of tile used for each layer -----------------
+layer1: 1
+layer2: 1
+layer3: 2
+layer4: 2
+layer5: 3
+layer6: 3
+layer7: 24
+layer8: 1
+----------------- Speed-up of each layer ------------------
+layer1: 16
+layer2: 4
+layer3: 4
+layer4: 2
+layer5: 2
+layer6: 1
+layer7: 1
+layer8: 8
+----------------- Utilization of each layer ------------------
+layer1: 0.158203
+layer2: 0.75
+layer3: 0.75
+layer4: 0.75
+layer5: 1
+layer6: 1
+layer7: 1
+layer8: 0.234375
+Memory Utilization of Whole Chip: 92.2772 %
+---------------------------- FloorPlan Done ------------------------------
+-------------------------------------- Hardware Performance --------------------------------------
+-------------------- Estimation of Layer 1 ----------------------
+Total Elapse: 1217.88, Best Result: 68.160%
+Traceback (most recent call last):
+  File "/home/chwolters/BachelorThesis/Training_pytorch/train.py", line 276, in <module>
+    call(["/bin/bash", "./layer_record/trace_command.sh"])
+  File "/home/chwolters/anaconda3/lib/python3.9/subprocess.py", line 351, in call
+    return p.wait(timeout=timeout)
+  File "/home/chwolters/anaconda3/lib/python3.9/subprocess.py", line 1189, in wait
+    return self._wait(timeout=timeout)
+  File "/home/chwolters/anaconda3/lib/python3.9/subprocess.py", line 1917, in _wait
+    (pid, sts) = self._try_wait(0)
+  File "/home/chwolters/anaconda3/lib/python3.9/subprocess.py", line 1875, in _try_wait
+    (pid, sts) = os.waitpid(self.pid, wait_flags)
+KeyboardInterrupt

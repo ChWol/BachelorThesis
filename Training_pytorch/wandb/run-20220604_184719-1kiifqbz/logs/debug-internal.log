@@ -1,0 +1,430 @@
+2022-06-04 18:47:20,859 INFO    MainThread:188735 [internal.py:wandb_internal():90] W&B internal server running at pid: 188735, started at: 2022-06-04 18:47:20.859103
+2022-06-04 18:47:20,861 INFO    WriterThread:188735 [datastore.py:open_for_write():75] open: /home/chwolters/BachelorThesis/Training_pytorch/wandb/run-20220604_184719-1kiifqbz/run-1kiifqbz.wandb
+2022-06-04 18:47:20,864 DEBUG   SenderThread:188735 [sender.py:send():232] send: header
+2022-06-04 18:47:20,864 DEBUG   SenderThread:188735 [sender.py:send():232] send: run
+2022-06-04 18:47:21,002 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: check_version
+2022-06-04 18:47:21,011 INFO    SenderThread:188735 [dir_watcher.py:__init__():197] watching files in: /home/chwolters/BachelorThesis/Training_pytorch/wandb/run-20220604_184719-1kiifqbz/files
+2022-06-04 18:47:21,012 INFO    SenderThread:188735 [sender.py:_start_run_threads():811] run started: 1kiifqbz with start time 1654382839
+2022-06-04 18:47:21,012 DEBUG   SenderThread:188735 [sender.py:send():232] send: summary
+2022-06-04 18:47:21,013 INFO    SenderThread:188735 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-06-04 18:47:21,013 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: check_version
+2022-06-04 18:47:21,119 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: run_start
+2022-06-04 18:47:21,136 DEBUG   HandlerThread:188735 [meta.py:__init__():35] meta init
+2022-06-04 18:47:21,136 DEBUG   HandlerThread:188735 [meta.py:__init__():49] meta init done
+2022-06-04 18:47:21,136 DEBUG   HandlerThread:188735 [meta.py:probe():209] probe
+2022-06-04 18:47:21,143 DEBUG   HandlerThread:188735 [meta.py:_setup_git():199] setup git
+2022-06-04 18:47:21,169 DEBUG   HandlerThread:188735 [meta.py:_setup_git():206] setup git done
+2022-06-04 18:47:21,169 DEBUG   HandlerThread:188735 [meta.py:_save_pip():53] save pip
+2022-06-04 18:47:21,170 DEBUG   HandlerThread:188735 [meta.py:_save_pip():67] save pip done
+2022-06-04 18:47:21,171 DEBUG   HandlerThread:188735 [meta.py:_save_conda():74] save conda
+2022-06-04 18:47:22,014 INFO    Thread-7  :188735 [dir_watcher.py:_on_file_created():244] file/dir created: /home/chwolters/BachelorThesis/Training_pytorch/wandb/run-20220604_184719-1kiifqbz/files/requirements.txt
+2022-06-04 18:47:22,015 INFO    Thread-7  :188735 [dir_watcher.py:_on_file_created():244] file/dir created: /home/chwolters/BachelorThesis/Training_pytorch/wandb/run-20220604_184719-1kiifqbz/files/wandb-summary.json
+2022-06-04 18:47:22,015 INFO    Thread-7  :188735 [dir_watcher.py:_on_file_created():244] file/dir created: /home/chwolters/BachelorThesis/Training_pytorch/wandb/run-20220604_184719-1kiifqbz/files/conda-environment.yaml
+2022-06-04 18:47:27,014 INFO    Thread-7  :188735 [dir_watcher.py:_on_file_created():244] file/dir created: /home/chwolters/BachelorThesis/Training_pytorch/wandb/run-20220604_184719-1kiifqbz/files/output.log
+2022-06-04 18:47:29,014 INFO    Thread-7  :188735 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/chwolters/BachelorThesis/Training_pytorch/wandb/run-20220604_184719-1kiifqbz/files/output.log
+2022-06-04 18:47:31,015 INFO    Thread-7  :188735 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/chwolters/BachelorThesis/Training_pytorch/wandb/run-20220604_184719-1kiifqbz/files/output.log
+2022-06-04 18:47:32,687 DEBUG   HandlerThread:188735 [meta.py:_save_conda():84] save conda done
+2022-06-04 18:47:32,687 DEBUG   HandlerThread:188735 [meta.py:probe():247] probe done
+2022-06-04 18:47:32,694 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 18:47:32,695 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 18:47:32,800 DEBUG   SenderThread:188735 [sender.py:send():232] send: telemetry
+2022-06-04 18:47:32,800 DEBUG   SenderThread:188735 [sender.py:send():232] send: files
+2022-06-04 18:47:32,800 INFO    SenderThread:188735 [sender.py:_save_file():948] saving file wandb-metadata.json with policy now
+2022-06-04 18:47:33,017 INFO    Thread-7  :188735 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/chwolters/BachelorThesis/Training_pytorch/wandb/run-20220604_184719-1kiifqbz/files/conda-environment.yaml
+2022-06-04 18:47:33,017 INFO    Thread-7  :188735 [dir_watcher.py:_on_file_created():244] file/dir created: /home/chwolters/BachelorThesis/Training_pytorch/wandb/run-20220604_184719-1kiifqbz/files/wandb-metadata.json
+2022-06-04 18:47:33,278 INFO    Thread-11 :188735 [upload_job.py:push():132] Uploaded file /tmp/tmpjkvwc83jwandb/gcvbp6tt-wandb-metadata.json
+2022-06-04 18:47:35,017 INFO    Thread-7  :188735 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/chwolters/BachelorThesis/Training_pytorch/wandb/run-20220604_184719-1kiifqbz/files/output.log
+2022-06-04 18:47:45,021 INFO    Thread-7  :188735 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/chwolters/BachelorThesis/Training_pytorch/wandb/run-20220604_184719-1kiifqbz/files/output.log
+2022-06-04 18:47:46,132 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 18:47:46,133 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 18:47:50,169 DEBUG   SenderThread:188735 [sender.py:send():232] send: stats
+2022-06-04 18:47:52,025 INFO    Thread-7  :188735 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/chwolters/BachelorThesis/Training_pytorch/wandb/run-20220604_184719-1kiifqbz/files/config.yaml
+2022-06-04 18:48:01,235 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 18:48:01,236 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 18:48:16,341 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 18:48:16,341 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 18:48:21,216 DEBUG   SenderThread:188735 [sender.py:send():232] send: stats
+2022-06-04 18:48:21,513 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: partial_history
+2022-06-04 18:48:21,514 DEBUG   SenderThread:188735 [sender.py:send():232] send: history
+2022-06-04 18:48:21,515 DEBUG   SenderThread:188735 [sender.py:send():232] send: summary
+2022-06-04 18:48:21,519 INFO    SenderThread:188735 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-06-04 18:48:22,039 INFO    Thread-7  :188735 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/chwolters/BachelorThesis/Training_pytorch/wandb/run-20220604_184719-1kiifqbz/files/wandb-summary.json
+2022-06-04 18:48:23,039 INFO    Thread-7  :188735 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/chwolters/BachelorThesis/Training_pytorch/wandb/run-20220604_184719-1kiifqbz/files/output.log
+2022-06-04 18:48:31,436 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 18:48:31,437 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 18:48:46,537 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 18:48:46,537 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 18:48:52,251 DEBUG   SenderThread:188735 [sender.py:send():232] send: stats
+2022-06-04 18:48:59,260 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: partial_history
+2022-06-04 18:48:59,262 DEBUG   SenderThread:188735 [sender.py:send():232] send: history
+2022-06-04 18:48:59,262 DEBUG   SenderThread:188735 [sender.py:send():232] send: summary
+2022-06-04 18:48:59,263 INFO    SenderThread:188735 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-06-04 18:49:00,057 INFO    Thread-7  :188735 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/chwolters/BachelorThesis/Training_pytorch/wandb/run-20220604_184719-1kiifqbz/files/wandb-summary.json
+2022-06-04 18:49:01,058 INFO    Thread-7  :188735 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/chwolters/BachelorThesis/Training_pytorch/wandb/run-20220604_184719-1kiifqbz/files/output.log
+2022-06-04 18:49:01,634 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 18:49:01,634 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 18:49:16,725 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 18:49:16,725 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 18:49:19,066 INFO    Thread-7  :188735 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/chwolters/BachelorThesis/Training_pytorch/wandb/run-20220604_184719-1kiifqbz/files/output.log
+2022-06-04 18:49:21,068 INFO    Thread-7  :188735 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/chwolters/BachelorThesis/Training_pytorch/wandb/run-20220604_184719-1kiifqbz/files/output.log
+2022-06-04 18:49:23,278 DEBUG   SenderThread:188735 [sender.py:send():232] send: stats
+2022-06-04 18:49:27,070 INFO    Thread-7  :188735 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/chwolters/BachelorThesis/Training_pytorch/wandb/run-20220604_184719-1kiifqbz/files/output.log
+2022-06-04 18:49:31,830 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 18:49:31,831 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 18:49:46,934 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 18:49:46,934 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 18:49:54,312 DEBUG   SenderThread:188735 [sender.py:send():232] send: stats
+2022-06-04 18:50:02,028 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 18:50:02,029 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 18:50:03,195 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: partial_history
+2022-06-04 18:50:03,196 DEBUG   SenderThread:188735 [sender.py:send():232] send: history
+2022-06-04 18:50:03,197 DEBUG   SenderThread:188735 [sender.py:send():232] send: summary
+2022-06-04 18:50:03,198 INFO    SenderThread:188735 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-06-04 18:50:04,088 INFO    Thread-7  :188735 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/chwolters/BachelorThesis/Training_pytorch/wandb/run-20220604_184719-1kiifqbz/files/wandb-summary.json
+2022-06-04 18:50:05,088 INFO    Thread-7  :188735 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/chwolters/BachelorThesis/Training_pytorch/wandb/run-20220604_184719-1kiifqbz/files/output.log
+2022-06-04 18:50:17,132 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 18:50:17,132 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 18:50:25,371 DEBUG   SenderThread:188735 [sender.py:send():232] send: stats
+2022-06-04 18:50:32,227 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 18:50:32,228 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 18:50:41,324 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: partial_history
+2022-06-04 18:50:41,325 DEBUG   SenderThread:188735 [sender.py:send():232] send: history
+2022-06-04 18:50:41,325 DEBUG   SenderThread:188735 [sender.py:send():232] send: summary
+2022-06-04 18:50:41,328 INFO    SenderThread:188735 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-06-04 18:50:42,105 INFO    Thread-7  :188735 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/chwolters/BachelorThesis/Training_pytorch/wandb/run-20220604_184719-1kiifqbz/files/wandb-summary.json
+2022-06-04 18:50:43,105 INFO    Thread-7  :188735 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/chwolters/BachelorThesis/Training_pytorch/wandb/run-20220604_184719-1kiifqbz/files/output.log
+2022-06-04 18:50:47,324 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 18:50:47,325 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 18:50:56,410 DEBUG   SenderThread:188735 [sender.py:send():232] send: stats
+2022-06-04 18:51:01,114 INFO    Thread-7  :188735 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/chwolters/BachelorThesis/Training_pytorch/wandb/run-20220604_184719-1kiifqbz/files/output.log
+2022-06-04 18:51:02,434 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 18:51:02,434 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 18:51:03,115 INFO    Thread-7  :188735 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/chwolters/BachelorThesis/Training_pytorch/wandb/run-20220604_184719-1kiifqbz/files/output.log
+2022-06-04 18:51:09,120 INFO    Thread-7  :188735 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/chwolters/BachelorThesis/Training_pytorch/wandb/run-20220604_184719-1kiifqbz/files/output.log
+2022-06-04 18:51:17,554 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 18:51:17,555 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 18:51:27,453 DEBUG   SenderThread:188735 [sender.py:send():232] send: stats
+2022-06-04 18:51:32,658 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 18:51:32,658 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 18:51:44,917 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: partial_history
+2022-06-04 18:51:44,918 DEBUG   SenderThread:188735 [sender.py:send():232] send: history
+2022-06-04 18:51:44,919 DEBUG   SenderThread:188735 [sender.py:send():232] send: summary
+2022-06-04 18:51:44,919 INFO    SenderThread:188735 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-06-04 18:51:45,136 INFO    Thread-7  :188735 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/chwolters/BachelorThesis/Training_pytorch/wandb/run-20220604_184719-1kiifqbz/files/wandb-summary.json
+2022-06-04 18:51:47,137 INFO    Thread-7  :188735 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/chwolters/BachelorThesis/Training_pytorch/wandb/run-20220604_184719-1kiifqbz/files/output.log
+2022-06-04 18:51:47,754 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 18:51:47,755 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 18:51:58,482 DEBUG   SenderThread:188735 [sender.py:send():232] send: stats
+2022-06-04 18:52:02,856 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 18:52:02,856 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 18:52:17,963 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 18:52:17,963 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 18:52:22,765 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: partial_history
+2022-06-04 18:52:22,766 DEBUG   SenderThread:188735 [sender.py:send():232] send: history
+2022-06-04 18:52:22,767 DEBUG   SenderThread:188735 [sender.py:send():232] send: summary
+2022-06-04 18:52:22,768 INFO    SenderThread:188735 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-06-04 18:52:23,153 INFO    Thread-7  :188735 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/chwolters/BachelorThesis/Training_pytorch/wandb/run-20220604_184719-1kiifqbz/files/wandb-summary.json
+2022-06-04 18:52:25,155 INFO    Thread-7  :188735 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/chwolters/BachelorThesis/Training_pytorch/wandb/run-20220604_184719-1kiifqbz/files/output.log
+2022-06-04 18:52:29,518 DEBUG   SenderThread:188735 [sender.py:send():232] send: stats
+2022-06-04 18:52:33,058 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 18:52:33,059 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 18:52:43,165 INFO    Thread-7  :188735 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/chwolters/BachelorThesis/Training_pytorch/wandb/run-20220604_184719-1kiifqbz/files/output.log
+2022-06-04 18:52:48,162 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 18:52:48,163 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 18:52:49,168 INFO    Thread-7  :188735 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/chwolters/BachelorThesis/Training_pytorch/wandb/run-20220604_184719-1kiifqbz/files/output.log
+2022-06-04 18:53:00,576 DEBUG   SenderThread:188735 [sender.py:send():232] send: stats
+2022-06-04 18:53:03,254 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 18:53:03,254 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 18:53:18,352 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 18:53:18,353 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 18:53:26,493 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: partial_history
+2022-06-04 18:53:26,494 DEBUG   SenderThread:188735 [sender.py:send():232] send: history
+2022-06-04 18:53:26,494 DEBUG   SenderThread:188735 [sender.py:send():232] send: summary
+2022-06-04 18:53:26,497 INFO    SenderThread:188735 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-06-04 18:53:27,187 INFO    Thread-7  :188735 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/chwolters/BachelorThesis/Training_pytorch/wandb/run-20220604_184719-1kiifqbz/files/wandb-summary.json
+2022-06-04 18:53:29,187 INFO    Thread-7  :188735 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/chwolters/BachelorThesis/Training_pytorch/wandb/run-20220604_184719-1kiifqbz/files/output.log
+2022-06-04 18:53:31,658 DEBUG   SenderThread:188735 [sender.py:send():232] send: stats
+2022-06-04 18:53:33,447 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 18:53:33,448 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 18:53:48,542 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 18:53:48,543 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 18:54:02,737 DEBUG   SenderThread:188735 [sender.py:send():232] send: stats
+2022-06-04 18:54:03,634 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 18:54:03,635 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 18:54:04,424 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: partial_history
+2022-06-04 18:54:04,425 DEBUG   SenderThread:188735 [sender.py:send():232] send: history
+2022-06-04 18:54:04,425 DEBUG   SenderThread:188735 [sender.py:send():232] send: summary
+2022-06-04 18:54:04,426 INFO    SenderThread:188735 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-06-04 18:54:05,205 INFO    Thread-7  :188735 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/chwolters/BachelorThesis/Training_pytorch/wandb/run-20220604_184719-1kiifqbz/files/wandb-summary.json
+2022-06-04 18:54:07,206 INFO    Thread-7  :188735 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/chwolters/BachelorThesis/Training_pytorch/wandb/run-20220604_184719-1kiifqbz/files/output.log
+2022-06-04 18:54:18,732 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 18:54:18,732 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 18:54:25,216 INFO    Thread-7  :188735 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/chwolters/BachelorThesis/Training_pytorch/wandb/run-20220604_184719-1kiifqbz/files/output.log
+2022-06-04 18:54:31,218 INFO    Thread-7  :188735 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/chwolters/BachelorThesis/Training_pytorch/wandb/run-20220604_184719-1kiifqbz/files/output.log
+2022-06-04 18:54:33,767 DEBUG   SenderThread:188735 [sender.py:send():232] send: stats
+2022-06-04 18:54:33,836 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 18:54:33,836 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 18:54:48,937 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 18:54:48,938 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 18:55:04,035 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 18:55:04,035 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 18:55:04,793 DEBUG   SenderThread:188735 [sender.py:send():232] send: stats
+2022-06-04 18:55:08,611 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: partial_history
+2022-06-04 18:55:08,613 DEBUG   SenderThread:188735 [sender.py:send():232] send: history
+2022-06-04 18:55:08,613 DEBUG   SenderThread:188735 [sender.py:send():232] send: summary
+2022-06-04 18:55:08,614 INFO    SenderThread:188735 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-06-04 18:55:09,239 INFO    Thread-7  :188735 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/chwolters/BachelorThesis/Training_pytorch/wandb/run-20220604_184719-1kiifqbz/files/wandb-summary.json
+2022-06-04 18:55:11,240 INFO    Thread-7  :188735 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/chwolters/BachelorThesis/Training_pytorch/wandb/run-20220604_184719-1kiifqbz/files/output.log
+2022-06-04 18:55:19,131 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 18:55:19,131 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 18:55:34,228 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 18:55:34,229 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 18:55:35,816 DEBUG   SenderThread:188735 [sender.py:send():232] send: stats
+2022-06-04 18:55:46,372 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: partial_history
+2022-06-04 18:55:46,374 DEBUG   SenderThread:188735 [sender.py:send():232] send: history
+2022-06-04 18:55:46,374 DEBUG   SenderThread:188735 [sender.py:send():232] send: summary
+2022-06-04 18:55:46,375 INFO    SenderThread:188735 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-06-04 18:55:47,256 INFO    Thread-7  :188735 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/chwolters/BachelorThesis/Training_pytorch/wandb/run-20220604_184719-1kiifqbz/files/wandb-summary.json
+2022-06-04 18:55:47,256 INFO    Thread-7  :188735 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/chwolters/BachelorThesis/Training_pytorch/wandb/run-20220604_184719-1kiifqbz/files/output.log
+2022-06-04 18:55:49,326 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 18:55:49,326 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 18:56:04,427 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 18:56:04,428 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 18:56:06,848 DEBUG   SenderThread:188735 [sender.py:send():232] send: stats
+2022-06-04 18:56:07,266 INFO    Thread-7  :188735 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/chwolters/BachelorThesis/Training_pytorch/wandb/run-20220604_184719-1kiifqbz/files/output.log
+2022-06-04 18:56:13,269 INFO    Thread-7  :188735 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/chwolters/BachelorThesis/Training_pytorch/wandb/run-20220604_184719-1kiifqbz/files/output.log
+2022-06-04 18:56:22,826 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 18:56:22,827 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 18:56:37,864 DEBUG   SenderThread:188735 [sender.py:send():232] send: stats
+2022-06-04 18:56:38,291 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 18:56:38,291 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 18:56:50,287 INFO    Thread-7  :188735 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/chwolters/BachelorThesis/Training_pytorch/wandb/run-20220604_184719-1kiifqbz/files/output.log
+2022-06-04 18:56:53,828 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 18:56:53,828 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 18:57:08,885 DEBUG   SenderThread:188735 [sender.py:send():232] send: stats
+2022-06-04 18:57:08,918 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 18:57:08,919 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 18:57:24,032 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 18:57:24,032 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 18:57:39,125 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 18:57:39,126 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 18:57:39,921 DEBUG   SenderThread:188735 [sender.py:send():232] send: stats
+2022-06-04 18:57:54,219 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 18:57:54,219 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 18:58:09,311 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 18:58:09,311 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 18:58:10,941 DEBUG   SenderThread:188735 [sender.py:send():232] send: stats
+2022-06-04 18:58:24,410 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 18:58:24,410 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 18:58:39,504 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 18:58:39,505 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 18:58:41,971 DEBUG   SenderThread:188735 [sender.py:send():232] send: stats
+2022-06-04 18:58:54,602 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 18:58:54,603 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 18:59:09,705 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 18:59:09,705 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 18:59:12,990 DEBUG   SenderThread:188735 [sender.py:send():232] send: stats
+2022-06-04 18:59:24,803 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 18:59:24,803 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 18:59:39,896 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 18:59:39,896 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 18:59:44,016 DEBUG   SenderThread:188735 [sender.py:send():232] send: stats
+2022-06-04 18:59:54,988 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 18:59:54,989 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 19:00:10,088 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 19:00:10,088 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 19:00:15,049 DEBUG   SenderThread:188735 [sender.py:send():232] send: stats
+2022-06-04 19:00:25,182 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 19:00:25,183 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 19:00:40,276 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 19:00:40,277 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 19:00:46,006 DEBUG   SenderThread:188735 [sender.py:send():232] send: stats
+2022-06-04 19:00:55,380 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 19:00:55,381 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 19:01:10,473 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 19:01:10,473 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 19:01:16,954 DEBUG   SenderThread:188735 [sender.py:send():232] send: stats
+2022-06-04 19:01:25,572 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 19:01:25,572 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 19:01:40,675 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 19:01:40,675 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 19:01:47,920 DEBUG   SenderThread:188735 [sender.py:send():232] send: stats
+2022-06-04 19:01:55,774 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 19:01:55,775 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 19:02:10,867 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 19:02:10,868 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 19:02:18,870 DEBUG   SenderThread:188735 [sender.py:send():232] send: stats
+2022-06-04 19:02:25,964 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 19:02:25,965 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 19:02:41,059 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 19:02:41,059 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 19:02:49,828 DEBUG   SenderThread:188735 [sender.py:send():232] send: stats
+2022-06-04 19:02:56,155 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 19:02:56,155 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 19:03:11,255 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 19:03:11,255 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 19:03:20,789 DEBUG   SenderThread:188735 [sender.py:send():232] send: stats
+2022-06-04 19:03:26,350 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 19:03:26,350 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 19:03:41,444 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 19:03:41,444 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 19:03:51,808 DEBUG   SenderThread:188735 [sender.py:send():232] send: stats
+2022-06-04 19:03:56,540 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 19:03:56,541 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 19:04:11,643 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 19:04:11,643 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 19:04:22,829 DEBUG   SenderThread:188735 [sender.py:send():232] send: stats
+2022-06-04 19:04:26,738 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 19:04:26,739 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 19:04:41,832 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 19:04:41,832 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 19:04:53,830 DEBUG   SenderThread:188735 [sender.py:send():232] send: stats
+2022-06-04 19:04:56,934 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 19:04:56,934 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 19:05:12,033 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 19:05:12,034 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 19:05:24,857 DEBUG   SenderThread:188735 [sender.py:send():232] send: stats
+2022-06-04 19:05:27,135 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 19:05:27,135 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 19:05:42,229 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 19:05:42,230 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 19:05:55,852 DEBUG   SenderThread:188735 [sender.py:send():232] send: stats
+2022-06-04 19:05:57,339 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 19:05:57,339 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 19:06:12,483 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 19:06:12,484 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 19:06:26,890 DEBUG   SenderThread:188735 [sender.py:send():232] send: stats
+2022-06-04 19:06:27,585 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 19:06:27,585 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 19:06:42,684 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 19:06:42,684 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 19:06:57,784 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 19:06:57,785 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 19:06:57,907 DEBUG   SenderThread:188735 [sender.py:send():232] send: stats
+2022-06-04 19:07:12,882 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 19:07:12,882 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 19:07:27,986 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 19:07:27,987 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 19:07:28,906 DEBUG   SenderThread:188735 [sender.py:send():232] send: stats
+2022-06-04 19:07:43,086 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-04 19:07:43,087 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: stop_status
+2022-06-04 19:07:48,975 WARNING MainThread:188735 [internal.py:wandb_internal():153] Internal process interrupt: 1
+2022-06-04 19:07:48,989 DEBUG   SenderThread:188735 [sender.py:send():232] send: telemetry
+2022-06-04 19:07:50,553 INFO    Thread-7  :188735 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/chwolters/BachelorThesis/Training_pytorch/wandb/run-20220604_184719-1kiifqbz/files/output.log
+2022-06-04 19:07:51,093 DEBUG   SenderThread:188735 [sender.py:send():232] send: exit
+2022-06-04 19:07:51,094 INFO    SenderThread:188735 [sender.py:send_exit():368] handling exit code: 255
+2022-06-04 19:07:51,096 INFO    SenderThread:188735 [sender.py:send_exit():370] handling runtime: 1229
+2022-06-04 19:07:51,096 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-04 19:07:51,098 INFO    SenderThread:188735 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-06-04 19:07:51,098 INFO    SenderThread:188735 [sender.py:send_exit():376] send defer
+2022-06-04 19:07:51,099 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: poll_exit
+2022-06-04 19:07:51,100 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: defer
+2022-06-04 19:07:51,100 INFO    HandlerThread:188735 [handler.py:handle_request_defer():164] handle defer: 0
+2022-06-04 19:07:51,101 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: defer
+2022-06-04 19:07:51,101 INFO    SenderThread:188735 [sender.py:send_request_defer():385] handle sender defer: 0
+2022-06-04 19:07:51,101 INFO    SenderThread:188735 [sender.py:transition_state():389] send defer: 1
+2022-06-04 19:07:51,102 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: defer
+2022-06-04 19:07:51,102 INFO    HandlerThread:188735 [handler.py:handle_request_defer():164] handle defer: 1
+2022-06-04 19:07:51,195 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: defer
+2022-06-04 19:07:51,196 INFO    SenderThread:188735 [sender.py:send_request_defer():385] handle sender defer: 1
+2022-06-04 19:07:51,196 INFO    SenderThread:188735 [sender.py:transition_state():389] send defer: 2
+2022-06-04 19:07:51,196 DEBUG   SenderThread:188735 [sender.py:send():232] send: stats
+2022-06-04 19:07:51,197 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: defer
+2022-06-04 19:07:51,197 INFO    HandlerThread:188735 [handler.py:handle_request_defer():164] handle defer: 2
+2022-06-04 19:07:51,198 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: defer
+2022-06-04 19:07:51,198 INFO    SenderThread:188735 [sender.py:send_request_defer():385] handle sender defer: 2
+2022-06-04 19:07:51,198 INFO    SenderThread:188735 [sender.py:transition_state():389] send defer: 3
+2022-06-04 19:07:51,199 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: defer
+2022-06-04 19:07:51,199 INFO    HandlerThread:188735 [handler.py:handle_request_defer():164] handle defer: 3
+2022-06-04 19:07:51,199 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: defer
+2022-06-04 19:07:51,199 INFO    SenderThread:188735 [sender.py:send_request_defer():385] handle sender defer: 3
+2022-06-04 19:07:51,199 INFO    SenderThread:188735 [sender.py:transition_state():389] send defer: 4
+2022-06-04 19:07:51,200 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: defer
+2022-06-04 19:07:51,200 INFO    HandlerThread:188735 [handler.py:handle_request_defer():164] handle defer: 4
+2022-06-04 19:07:51,201 DEBUG   SenderThread:188735 [sender.py:send():232] send: summary
+2022-06-04 19:07:51,202 INFO    SenderThread:188735 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-06-04 19:07:51,202 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-04 19:07:51,203 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: defer
+2022-06-04 19:07:51,203 INFO    SenderThread:188735 [sender.py:send_request_defer():385] handle sender defer: 4
+2022-06-04 19:07:51,203 INFO    SenderThread:188735 [sender.py:transition_state():389] send defer: 5
+2022-06-04 19:07:51,203 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: poll_exit
+2022-06-04 19:07:51,204 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: defer
+2022-06-04 19:07:51,204 INFO    HandlerThread:188735 [handler.py:handle_request_defer():164] handle defer: 5
+2022-06-04 19:07:51,205 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: defer
+2022-06-04 19:07:51,205 INFO    SenderThread:188735 [sender.py:send_request_defer():385] handle sender defer: 5
+2022-06-04 19:07:51,306 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-04 19:07:51,328 INFO    SenderThread:188735 [sender.py:transition_state():389] send defer: 6
+2022-06-04 19:07:51,329 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: poll_exit
+2022-06-04 19:07:51,330 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: defer
+2022-06-04 19:07:51,330 INFO    HandlerThread:188735 [handler.py:handle_request_defer():164] handle defer: 6
+2022-06-04 19:07:51,331 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: defer
+2022-06-04 19:07:51,331 INFO    SenderThread:188735 [sender.py:send_request_defer():385] handle sender defer: 6
+2022-06-04 19:07:51,331 INFO    SenderThread:188735 [dir_watcher.py:finish():312] shutting down directory watcher
+2022-06-04 19:07:51,431 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-04 19:07:51,553 INFO    Thread-7  :188735 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/chwolters/BachelorThesis/Training_pytorch/wandb/run-20220604_184719-1kiifqbz/files/wandb-summary.json
+2022-06-04 19:07:51,555 INFO    SenderThread:188735 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/chwolters/BachelorThesis/Training_pytorch/wandb/run-20220604_184719-1kiifqbz/files/config.yaml
+2022-06-04 19:07:51,555 INFO    SenderThread:188735 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/chwolters/BachelorThesis/Training_pytorch/wandb/run-20220604_184719-1kiifqbz/files/output.log
+2022-06-04 19:07:51,556 INFO    SenderThread:188735 [dir_watcher.py:finish():342] scan: /home/chwolters/BachelorThesis/Training_pytorch/wandb/run-20220604_184719-1kiifqbz/files
+2022-06-04 19:07:51,556 INFO    SenderThread:188735 [dir_watcher.py:finish():356] scan save: /home/chwolters/BachelorThesis/Training_pytorch/wandb/run-20220604_184719-1kiifqbz/files/output.log output.log
+2022-06-04 19:07:51,557 INFO    SenderThread:188735 [dir_watcher.py:finish():356] scan save: /home/chwolters/BachelorThesis/Training_pytorch/wandb/run-20220604_184719-1kiifqbz/files/wandb-summary.json wandb-summary.json
+2022-06-04 19:07:51,557 INFO    SenderThread:188735 [dir_watcher.py:finish():356] scan save: /home/chwolters/BachelorThesis/Training_pytorch/wandb/run-20220604_184719-1kiifqbz/files/wandb-metadata.json wandb-metadata.json
+2022-06-04 19:07:51,557 INFO    SenderThread:188735 [dir_watcher.py:finish():356] scan save: /home/chwolters/BachelorThesis/Training_pytorch/wandb/run-20220604_184719-1kiifqbz/files/conda-environment.yaml conda-environment.yaml
+2022-06-04 19:07:51,558 INFO    SenderThread:188735 [dir_watcher.py:finish():356] scan save: /home/chwolters/BachelorThesis/Training_pytorch/wandb/run-20220604_184719-1kiifqbz/files/config.yaml config.yaml
+2022-06-04 19:07:51,577 INFO    SenderThread:188735 [dir_watcher.py:finish():356] scan save: /home/chwolters/BachelorThesis/Training_pytorch/wandb/run-20220604_184719-1kiifqbz/files/requirements.txt requirements.txt
+2022-06-04 19:07:51,589 INFO    SenderThread:188735 [sender.py:transition_state():389] send defer: 7
+2022-06-04 19:07:51,589 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: poll_exit
+2022-06-04 19:07:51,590 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: defer
+2022-06-04 19:07:51,591 INFO    HandlerThread:188735 [handler.py:handle_request_defer():164] handle defer: 7
+2022-06-04 19:07:51,598 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: defer
+2022-06-04 19:07:51,598 INFO    SenderThread:188735 [sender.py:send_request_defer():385] handle sender defer: 7
+2022-06-04 19:07:51,599 INFO    SenderThread:188735 [file_pusher.py:finish():145] shutting down file pusher
+2022-06-04 19:07:51,696 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-04 19:07:51,699 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: poll_exit
+2022-06-04 19:07:51,802 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-04 19:07:51,802 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: poll_exit
+2022-06-04 19:07:51,904 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-04 19:07:51,905 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: poll_exit
+2022-06-04 19:07:52,008 INFO    Thread-12 :188735 [upload_job.py:push():132] Uploaded file /home/chwolters/BachelorThesis/Training_pytorch/wandb/run-20220604_184719-1kiifqbz/files/output.log
+2022-06-04 19:07:52,009 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-04 19:07:52,010 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: poll_exit
+2022-06-04 19:07:52,013 INFO    Thread-13 :188735 [upload_job.py:push():132] Uploaded file /home/chwolters/BachelorThesis/Training_pytorch/wandb/run-20220604_184719-1kiifqbz/files/wandb-summary.json
+2022-06-04 19:07:52,028 INFO    Thread-14 :188735 [upload_job.py:push():132] Uploaded file /home/chwolters/BachelorThesis/Training_pytorch/wandb/run-20220604_184719-1kiifqbz/files/conda-environment.yaml
+2022-06-04 19:07:52,087 INFO    Thread-16 :188735 [upload_job.py:push():132] Uploaded file /home/chwolters/BachelorThesis/Training_pytorch/wandb/run-20220604_184719-1kiifqbz/files/requirements.txt
+2022-06-04 19:07:52,113 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-04 19:07:52,113 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: poll_exit
+2022-06-04 19:07:52,117 INFO    Thread-15 :188735 [upload_job.py:push():132] Uploaded file /home/chwolters/BachelorThesis/Training_pytorch/wandb/run-20220604_184719-1kiifqbz/files/config.yaml
+2022-06-04 19:07:52,215 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-04 19:07:52,216 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: poll_exit
+2022-06-04 19:07:52,318 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-04 19:07:52,319 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: poll_exit
+2022-06-04 19:07:52,319 INFO    Thread-6  :188735 [sender.py:transition_state():389] send defer: 8
+2022-06-04 19:07:52,320 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: defer
+2022-06-04 19:07:52,320 INFO    HandlerThread:188735 [handler.py:handle_request_defer():164] handle defer: 8
+2022-06-04 19:07:52,321 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: defer
+2022-06-04 19:07:52,321 INFO    SenderThread:188735 [sender.py:send_request_defer():385] handle sender defer: 8
+2022-06-04 19:07:52,421 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-04 19:07:52,548 INFO    SenderThread:188735 [sender.py:transition_state():389] send defer: 9
+2022-06-04 19:07:52,549 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: poll_exit
+2022-06-04 19:07:52,550 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: defer
+2022-06-04 19:07:52,550 INFO    HandlerThread:188735 [handler.py:handle_request_defer():164] handle defer: 9
+2022-06-04 19:07:52,551 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: defer
+2022-06-04 19:07:52,551 INFO    SenderThread:188735 [sender.py:send_request_defer():385] handle sender defer: 9
+2022-06-04 19:07:52,551 INFO    SenderThread:188735 [sender.py:transition_state():389] send defer: 10
+2022-06-04 19:07:52,553 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: defer
+2022-06-04 19:07:52,553 INFO    HandlerThread:188735 [handler.py:handle_request_defer():164] handle defer: 10
+2022-06-04 19:07:52,554 DEBUG   SenderThread:188735 [sender.py:send():232] send: final
+2022-06-04 19:07:52,554 DEBUG   SenderThread:188735 [sender.py:send():232] send: footer
+2022-06-04 19:07:52,555 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: defer
+2022-06-04 19:07:52,555 INFO    SenderThread:188735 [sender.py:send_request_defer():385] handle sender defer: 10
+2022-06-04 19:07:52,651 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-04 19:07:52,652 DEBUG   SenderThread:188735 [sender.py:send_request():246] send_request: poll_exit
+2022-06-04 19:07:52,652 INFO    SenderThread:188735 [file_pusher.py:join():150] waiting for file pusher
+2022-06-04 19:07:52,953 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: sampled_history
+2022-06-04 19:07:52,956 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: get_summary
+2022-06-04 19:07:52,959 DEBUG   HandlerThread:188735 [handler.py:handle_request():141] handle_request: shutdown
+2022-06-04 19:07:52,959 INFO    HandlerThread:188735 [handler.py:finish():806] shutting down handler
+2022-06-04 19:07:53,554 INFO    WriterThread:188735 [datastore.py:close():279] close: /home/chwolters/BachelorThesis/Training_pytorch/wandb/run-20220604_184719-1kiifqbz/run-1kiifqbz.wandb
+2022-06-04 19:07:53,851 INFO    SenderThread:188735 [sender.py:finish():1110] shutting down sender
+2022-06-04 19:07:53,851 INFO    SenderThread:188735 [file_pusher.py:finish():145] shutting down file pusher
+2022-06-04 19:07:53,852 INFO    SenderThread:188735 [file_pusher.py:join():150] waiting for file pusher
+2022-06-04 19:07:53,858 INFO    MainThread:188735 [internal.py:handle_exit():80] Internal process exited
