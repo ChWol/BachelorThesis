@@ -30,3 +30,12 @@
 *.exe
 *.out
 *.app
+
+# Simulator logs
+PythonWrapper_Output.csv
+NeuroSIM_Output.csv
+log/
+layer_record/
+wandb/
+weight_dist.csv
+delta_dist.csv
