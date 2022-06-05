@@ -20,8 +20,6 @@ from subprocess import call
 from modules.quantization_cpu_np_infer import QConv2d,QLinear
 import wandb
 
-wandb.init(project='test')
-
 parser = argparse.ArgumentParser(description='PyTorch CIFAR-X Example')
 parser.add_argument('--type', default='cifar10', help='dataset for training')
 parser.add_argument('--batch_size', type=int, default=200, help='input batch size for training (default: 64)')
@@ -67,6 +65,7 @@ args.nonlinearityLTD = 1.46   # nonlinearity in LTD (negative if LTP and LTD are
 gamma = 0.9
 alpha = 0.1
 
+wandb.init(project='Test runs')
 
 NeuroSim_Out = np.array([["L_forward (s)", "L_activation gradient (s)", "L_weight gradient (s)", "L_weight update (s)", 
                           "E_forward (J)", "E_activation gradient (J)", "E_weight gradient (J)", "E_weight update (J)",

@@ -1,0 +1,80 @@
+/home/chwolters/BachelorThesis/Training_pytorch/log/default/ADCprecision=5/batch_size=200/c2cVari=0.003/cellBit=5/d2dVari=0.0/decreasing_lr=200,250/detect=0/grad_scale=1/inference=0/max_level=32/nonlinearityLTD=1.46/nonlinearityLTP=1.75/onoffratio=10/seed=117/subArray=128/t=0/target=0/type=cifar10/v=0/vari=0/wl_activate=8/wl_error=8/wl_grad=5/wl_weight=5
+Building CIFAR-10 data loader with 1 workers
+Files already downloaded and verified
+=================FLAGS==================
+type: cifar10
+batch_size: 200
+epochs: 1
+grad_scale: 1
+seed: 117
+log_interval: 100
+test_interval: 2
+logdir: /home/chwolters/BachelorThesis/Training_pytorch/log/default/ADCprecision=5/batch_size=200/c2cVari=0.003/cellBit=5/d2dVari=0.0/decreasing_lr=200,250/detect=0/grad_scale=1/inference=0/max_level=32/nonlinearityLTD=1.46/nonlinearityLTP=1.75/onoffratio=10/seed=117/subArray=128/t=0/target=0/type=cifar10/v=0/vari=0/wl_activate=8/wl_error=8/wl_grad=5/wl_weight=5
+decreasing_lr: 200,250
+wl_weight: 5
+wl_grad: 5
+wl_activate: 8
+wl_error: 8
+inference: 0
+onoffratio: 10
+cellBit: 5
+subArray: 128
+ADCprecision: 5
+vari: 0
+t: 0
+v: 0
+detect: 0
+target: 0
+nonlinearityLTP: 1.75
+nonlinearityLTD: 1.46
+max_level: 32
+d2dVari: 0.0
+c2cVari: 0.003
+========================================
+Files already downloaded and verified
+fan_in     27, float_limit 0.333333, quant limit 1.5, scale 4
+fan_in   1152, float_limit 0.051031, quant limit 1.5, scale 32
+fan_in   1152, float_limit 0.051031, quant limit 1.5, scale 32
+fan_in   2304, float_limit 0.036084, quant limit 1.5, scale 32
+fan_in   2304, float_limit 0.036084, quant limit 1.5, scale 32
+fan_in   4608, float_limit 0.025516, quant limit 1.5, scale 64
+fan_in   8192, float_limit 0.019137, quant limit 1.5, scale 64
+fan_in   1024, float_limit 0.054127, quant limit 1.5, scale 32
+Sequential(
+  (0): QConv2d(3, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (1): ReLU()
+  (2): QConv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (3): ReLU()
+  (4): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (5): QConv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (6): ReLU()
+  (7): QConv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (8): ReLU()
+  (9): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (10): QConv2d(256, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (11): ReLU()
+  (12): QConv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (13): ReLU()
+  (14): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+)
+Sequential(
+  (0): QLinear(in_features=8192, out_features=1024, bias=False)
+  (1): ReLU(inplace=True)
+  (2): QLinear(in_features=1024, out_features=10, bias=False)
+)
+decreasing_lr: [200, 250]
+training phase
+Train Epoch: 0 [20000/50000] Loss: 83.652206 Acc: 0.2750 lr: 1.00e+00
+Train Epoch: 0 [40000/50000] Loss: 74.626762 Acc: 0.4200 lr: 1.00e+00
+Elapsed 107.32s, 107.32 s/epoch, 0.43 s/batch, ets 0.00s
+weight distribution
+[-4.71894396e-03 -3.68156005e-03  5.64123271e-03 -3.65321338e-03
+ -8.04464726e-05 -1.32363476e-02 -3.35567445e-02 -3.59818875e-03
+  4.93629158e-01  6.24858081e-01  6.38363004e-01  6.56319678e-01
+  6.65003657e-01  6.55160606e-01  7.00596809e-01  6.37180090e-01]
+delta distribution
+[-5.29875560e-03  2.08960637e-03  1.17874146e-03  8.66042275e-04
+  4.10874694e-04  4.92890656e-04  8.07046890e-05 -4.88281257e-05
+  3.00024003e-02  1.98736228e-02  1.84721202e-02  1.24577628e-02
+  1.08058155e-02  1.09312814e-02  6.16319198e-03  1.09099858e-02]
+Total Elapse: 114.37, Best Result: 0.000%
