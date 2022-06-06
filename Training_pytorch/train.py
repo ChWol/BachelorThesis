@@ -65,7 +65,14 @@ args.nonlinearityLTD = 1.46   # nonlinearity in LTD (negative if LTP and LTD are
 gamma = 0.9
 alpha = 0.1
 
-wandb.init(project='Test runs')
+#run for loop with grid search for parameters, reassining the runs: 
+#https://colab.research.google.com/github/wandb/examples/blob/master/colabs/intro/Intro_to_Weights_%26_Biases.ipynb
+wandb.init(project='test')
+wandb.config.batch_size = args.batch_size
+wandb.config.cellBit = args.cellBit
+wandb.config.ADCprecision = args.ADCprecision
+wandb.config.dataset = args.type
+wandb.config.epochs = args.epochs
 
 NeuroSim_Out = np.array([["L_forward (s)", "L_activation gradient (s)", "L_weight gradient (s)", "L_weight update (s)", 
                           "E_forward (J)", "E_activation gradient (J)", "E_weight gradient (J)", "E_weight update (J)",
